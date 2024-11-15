@@ -21,6 +21,7 @@ app.post("/add", async (req, res) => {
     res.status(201).json({ success: true });
   } catch (error) {
     console.log(error);
+    res.status(500).json({ message: "error" });
   }
 });
 
